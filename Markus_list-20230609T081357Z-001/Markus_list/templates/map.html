@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{"decoupled-map"|googlemap_js(55.827037, 10.596938, markers=[(55.827037, 10.596938)])}} {{mymap.js}}
+  </head>
+  <body>
+    <center> <h1>EL biler på Samsø</h1>
+    {{mymap.html}}
+    <!-- make big button to go to list.html -->
+    <!-- <a href="/list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 100px">List</a> -->
+    <br><br><br>
+    <form action="/list" method="post" type="button">
+      <a href="/list">
+      <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 100px; background-color: rgb(224, 120, 207)">List</button>
+      </a>
+    </form>
+    </center>
+  </body>
+</html>
