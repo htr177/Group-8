@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <!--<style>
+        body {
+            background-image: url("https://1.bp.blogspot.com/-sTxAHAxirGM/WVbAe2098nI/AAAAAAABENs/_I5sYMYgLOUzaIE7FfF4qdGX-hoAkq9SgCLcBGAs/s1600/Blog_20170624_113552.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> -->
+</head>
+<body> 
+    <div>
+        <center><h1>EV stations on Samsø</h1></center>
+        <center><p>Please fill out the form below</p></center>
+        <h2>Choose a socket type:</h2>
+        <form method="post">
+            <label for="type_1">Type 1:</label>
+            <input type="checkbox" value="Type 1" id="1" name="check" /><br><br>
+  
+            <label for="type_2">Type 2:</label>
+            <input type="checkbox" value="Type 2" id="2" name="check" /><br><br>
+  
+            <label for="CCS_Combo">CCS-Combo:</label>
+            <input type="checkbox" value="CCS" id="CCS" name="check" /><br><br>
+  
+            <label for="CHAdeMO">CHAdeMO:</label>
+            <input type="checkbox" value="CHA" id="CHA" name="check" /><br><br>
+          
+            <button class="btn btn-primary btn-block">Save</button>
+        </form>
+    </div>
+</body>
+</html>
