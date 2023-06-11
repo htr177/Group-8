@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> The Map </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='the_map.css') }}">
+  {{"decoupled-map"|googlemap_js(55.827037, 10.596938, markers=[(55.827037, 10.596938)])}} {{mymap.js}}
+</head>
+<body>
+  
+  <center> <h1>EV stations on Samsø</h1>
+  <h3>Click on the markers to see more information</h3>
+  {{mymap.html}}
+  <!-- make big button to go to list.html -->
+  <!-- <a href="/list" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 100px">List</a> -->
+  <br>
+  <form action="/list" method="post" type="button">
+    <a href="/list">
+    <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 200px; background-color: #f7bf53">Go to list</button>
+    </a>
+  </form>
+  <br>
+  <form action="user" type="button">
+    <a href="user">
+    <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 200px; background-color: #f7bf53" textsize="20px" href="user">
+    Back </button>
+    </a>
+  </form>
+  </center>
+
+</body>
+</html>

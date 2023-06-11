@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body> 
+    <div>
+        <center><h1>EV stations on Samsø</h1>
+        <h3>Please fill out the form below</h3>
+        <h2>Choose a socket type:</h2>
+        <form method="post">
+            <label for="type_1">Type 1:</label>
+            <input type="checkbox" value="Type 1" id="1" name="check" /><br><br>
+  
+            <label for="type_2">Type 2:</label>
+            <input type="checkbox" value="Type 2" id="2" name="check" /><br><br>
+  
+            <label for="CCS_Combo">CCS-Combo:</label>
+            <input type="checkbox" value="CCS" id="CCS" name="check" /><br><br>
+  
+            <label for="CHAdeMO">CHAdeMO:</label>
+            <input type="checkbox" value="CHA" id="CHA" name="check" /><br><br>
+          
+            <button class="btn btn-primary btn-block" style="background-color: #f7bf53; height: 30px; width: 200px;"> Next </button>
+        </form>
+        
+        </center>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form 2 </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body> 
+<div>
+    <center><h1> EV stations on Samsø</h1></center> 
+    <center><h3> Please fill out the form below </h3> 
+        
+        
+        <form method="post">
+            <h2> What are your coordinates?: </h2> 
+          <label for="latitude">Latitude:</label>
+          <input type="number" class="form-control" value="lat" id="lat" name="latitude" placeholder="LAT" step="any" required/>
+          <br> <br>
+          
+          <label for="longitude">Longitude:</label>
+          <input type="number" class="form-control" value="long" id="long" name="longitude" placeholder="LONG" step="any" required/>
+          <br> <br>
+          
+          <h2> Maximum traveling distance: </h2> 
+          <label for="travel">Travel distance:</label>
+          <input type="number" class="form-control" value="tra" id="tra" name="travel_dis" placeholder="TRA" step="any" required/>
+          <br> <br>
+
+          <button class="btn btn-primary btn-block" style="background-color: #f7bf53; height: 30px; width: 200px;"> Next </button>
+          
+        </form> 
+        <br> 
+        <form action="user" type="button">
+            <a href="user">
+            <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" style="height: 30px; width: 200px; background-color: #f7bf53" textsize="20px" href="user">
+            Back </button>
+            </a>
+        </form>
+    </center> 
+</div>
+</body>
+</html>
