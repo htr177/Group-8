@@ -1,8 +1,0 @@
-station_id, provider_name, address, station_latitude, station_longitude, price_no_subscription, number_of_chargers
-S001, "Clever", "Møllebakkevej 1 8305 Samsø", 55.831128, 10.593543, 3.49, 3
-S002, "Clever", "Søndergade 1 8305 Samsø", 55.879000, 10.616000, 3.49, 2
-S003, "E.ON", "Ørby Hovedgade 35A 8305 Samsø", 55.794139, 10.595924, 4.5, 2
-S004, "ViggoEnergy", "Alstrup 7 8305 Samsø", 55.876914, 10.625741, 4.25, 3
-S005, "Q8", "Ved Kæret 2 8305 Samsø", 55.965085, 10.553124, 3.75, 2
-S006, "Spirii", "Langørevej 9 8305 Samsø", 55.918538, 10.633545, 3.65, 1
-S007, "Monta", "Maarup Hovedgade 18 8305 Samsø", 55.945145, 10.567675, 4.26, 3

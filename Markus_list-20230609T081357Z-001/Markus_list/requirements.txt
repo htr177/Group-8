@@ -1,4 +1,0 @@
-flask==2.3.2
-psycopg2==2.9.6
-geopy==2.3.0
-flask-googlemaps==0.4.0
